@@ -1,0 +1,8 @@
+.master-container {
+    /* display: grid; */
+    position: absolute;
+    /* grid-template-columns: auto; */
+    gap: 5px;
+    margin: -568px 240px;
+    
+  }

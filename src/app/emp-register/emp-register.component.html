@@ -1,0 +1,158 @@
+<div class="body1">
+    <div class="bg-image"></div>
+    <div class="back">
+  <p class="title">REGISTRATION FORM </p>
+  <form #rgform="ngForm" class="form1">
+  <div class="container px-7">
+      
+    <div class="row gx-5 ">
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="First Name" class="input-field" type="text" name="fname" ngModel>
+            <label for="input-field" class="input-label">First Name</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+        
+      <div class="col g-2">
+        <div class="input-container">
+          <input placeholder="Last Name" class="input-field" type="text" name="lname" ngModel>
+          <label for="input-field" class="input-label">Last Name</label>
+          <span class="input-highlight"></span>
+        </div>
+            
+      </div>
+      <div class="col g-2">
+        <div class="input-container">
+          <input placeholder="Date of Birth" class="input-field" type="text" name="dob" ngModel>
+          <label for="input-field" class="input-label">DOB - DD/MM/YYYY</label>
+          <span class="input-highlight"></span>
+        </div>
+      </div>
+      </div>
+      
+      <div class="row gx-5">
+          <div class="col g-2">
+            <div class="input-container">
+              <input placeholder="Email Address" class="input-field" type="email" name="email" ngModel>
+              <label for="input-field" class="input-label">Email ID</label>
+              <span class="input-highlight"></span>
+            </div>
+      </div>
+          
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Phone Number" class="input-field" type="tel" name="phone" ngModel pattern="[0-9 ]{10}" value="+91 ">
+            <label for="input-field" class="input-label">Phone Number</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Whatsapp Number" class="input-field" type="tel" name="whatsapp" ngModel>
+            <label for="input-field" class="input-label">Whatsapp Number</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+      </div>
+  
+      <div class="row gx-5">
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Address" class="input-field" type="text" name="address" ngModel>
+            <label for="input-field" class="input-label">Address</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Country" class="input-field" type="text" name="country" ngModel>
+            <label for="input-field" class="input-label">Country</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+        <div class="col g-2">
+        <div class="input-container">
+          <input placeholder="Postal Code" class="input-field" type="text" name="postal" ngModel>
+          <label for="input-field" class="input-label">Postal Code</label>
+          <span class="input-highlight"></span>
+        </div>
+      </div>
+  
+      </div>
+        
+        <div class="row gx-5">
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Password" class="input-field" type="text" name="password" ngModel>
+            <label for="input-field" class="input-label">Password</label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+        
+        <div class="image_upload">
+        <div class="col g-2">
+          <div class="input-container">
+            <input placeholder="Profile" class="input-field" type="file" name="emp_profile" ngModel (change)="onchange($event)">
+            <label for="input-field" class="input-label">Upload Passport size </label>
+            <span class="input-highlight"></span>
+          </div>
+        </div>
+      </div>
+      <div class="gender_input">
+        <div class="col g-5">
+          <label class="gender">Gender</label>
+          <div class="radio-buttons-container">
+            <div class="radio-button">
+              <input name="radio-group" id="radio2" class="radio-button__input" type="radio" checked>
+              <label for="radio2" class="radio-button__label">
+                <span class="radio-button__custom"></span>
+                    
+                  Male
+              </label>
+            </div>
+            <div class="radio-button">
+              <input name="radio-group" id="radio1" class="radio-button__input" type="radio">
+              <label for="radio1" class="radio-button__label">
+                <span class="radio-button__custom"></span>
+                
+                  Female
+              </label>
+            </div>
+            <div class="radio-button">
+              <input name="radio-group" id="radio3" class="radio-button__input" type="radio">
+              <label for="radio3" class="radio-button__label">
+                <span class="radio-button__custom"></span>
+                    
+                  Other
+              </label>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+        
+      </div>
+  
+  
+  
+  
+      
+    </div>
+    <div class="form-check check">
+      <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+      <label class="form-check-label" for="defaultCheck1">
+          I agree all statements
+      </label>
+    </div>
+    
+    <div class="button1">
+      <button type="button" (click)="emp_reg_form(rgform.value)" class="btn btn-primary">Submit</button>
+    </div><br>
+    
+  </form>
+  
+  </div>
+  </div>
+
+  

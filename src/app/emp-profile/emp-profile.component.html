@@ -1,0 +1,108 @@
+<app-emp-profile-navbar></app-emp-profile-navbar>
+<app-emp-profile-sidebar></app-emp-profile-sidebar>
+<div class="body1">
+  
+    <div class="back">
+      <div class="master-container">
+        <div class="card cart">
+          <label class="title">User Info<h5 class="emb_id">Emp-ID : 7534251</h5></label>
+            <div class="products">
+              <div class="product">
+                <img class="dp" src="http://localhost:3000/{{emp_profile.filename}}" />
+                <div class="personal_info">
+                  <h3>{{emp_data.Emp_Fname}}</h3>
+                  <a type="email"><h6>{{emp_data.Emp_Email}}</h6></a>
+                  <h6>{{emp_data.Emp_Phone}}</h6>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        <form class="personal_form1" #profileform="ngForm">
+          <div class="card checkout">
+            <label class="title">Account details</label>
+              <div class="details">
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <div class="input-container">
+                        <label for="input" class="label">First Name</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required=""   name="fname" [placeholder]="emp_data.Emp_Fname" ngModel>
+                        
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <label for="input" class="label">Email ID</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required=""   name="email" [placeholder]="emp_data.Emp_Email" ngModel>
+                        
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <label for="input" class="label">Postal Code</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Postal" name="postal" [placeholder]="emp_data.Emp_Postal" ngModel >
+                        
+                        <div class="underline"></div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="input-container">
+                        <label for="input" class="label">Last Name</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Lname" name="lname" [placeholder]="emp_data.Emp_Lname" ngModel >
+                        
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <label for="input" class="label">Contact No</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Phone"  name="phone" [placeholder]="emp_data.Emp_Phone" ngModel>
+                        
+                      <div class="underline"></div>
+                    </div>
+                    <div class="input-container">
+                        <label for="input" class="label">City</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Address" name="address" [placeholder]="emp_data.Emp_Address" ngModel >
+                        
+                        <div class="underline"></div>
+                      </div>
+                  </div>
+                  <div class="col">
+                    <div class="input-container">
+                        <label for="input" class="label">Date Of Birth</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Data_of_Birth" name="dob" [placeholder]="emp_data.Emp_Data_of_Birth" ngModel >
+                        
+                        <div class="underline"></div>
+                      </div>
+                      <div class="input-container">
+                        <label for="input" class="label">Whatsapp No</label>
+                        <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Whatsapp" name="whatsapp" [placeholder]="emp_data.Emp_Whatsapp" ngModel >
+                        
+                        <div class="underline"></div>
+                      </div>
+                    
+                    <div class="input-container">
+                        <label for="input" class="label">Country</label>
+                      <input type="text" id="input" [disabled]="isDisabled" required="" [value]="emp_data.Emp_Country" name="country" [placeholder]="emp_data.Emp_Country" ngModel >
+                      
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="input-container">
+                        <label for="input" class="label">Update Profile Picture</label>
+                      <input type="file" id="input" [disabled]="isDisabled" required=""  name="emp_profile" (change)="onchange($event)" ngModel >
+                      
+                      <div class="underline"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          <div class="checkout--footer">
+            <button class="checkout-btn price" (click)="edit_profile()">Edit</button> 
+             <button class="checkout-btn" (click)="save_profile(profileform.value)">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+  

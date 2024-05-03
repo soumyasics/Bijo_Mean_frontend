@@ -1,0 +1,16 @@
+<form #file_upload="ngForm">
+<input type="file" class="file-input"
+       (change)="onFileSelected($event)" #fileUpload>
+
+<div class="file-upload">
+
+   {{fileName || "No file uploaded yet."}}
+
+    <button  color="primary" 
+      (click)="fileUpload.click()">
+        <!-- <mat-icon>attach_file</mat-icon> -->
+        Select File
+    </button><br>
+    <button type="submit" (click)="upload_file(fileUpload.value)">Upload File</button>
+</div>
+</form>
