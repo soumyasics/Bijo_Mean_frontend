@@ -1,30 +1,82 @@
 <app-emp-profile-navbar></app-emp-profile-navbar>
-<app-emp-profile-sidebar></app-emp-profile-sidebar>
+<app-emp-leave-req-sidebar></app-emp-leave-req-sidebar>
 <div class="body1">
-    
-      <div class="back">
-        <div class="master-container">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                1 of 2
-              </div>
-              <div class="col">
-                2 of 2
+    <div class="back">
+      <div class="master-container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="img">
+                  <div class="save">
+                    <h4>30</h4>
+                  </div>
+                </div>
+                <div class="text">
+                  <p class="h3"> Available Leaves in this Year </p>
+                </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col">
-                1 of 3
+            <div class="col">
+              <div class="card">
+                <div class="img">
+                  <div class="save">
+                    <h4>3</h4>
+                  </div>
+                </div>
+                <div class="text">
+                  <p class="h3"> Leaves Used this Year </p>
+                </div>
               </div>
-              <div class="col">
-                2 of 3
-              </div>
-              <div class="col">
-                3 of 3
+            </div>
+            <div class="col">
+              <div class="card">
+                <div class="img">
+                  <div class="save">
+                    <h4>2</h4>
+                  </div>
+                </div>
+                <div class="text">
+                  <p class="h3"> Overdue leaves to use before this Month end  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+      <div class="leave_req_form">
+        
+    <form class="form">
+      <p class="form-title">Leave Request</p>
+      <label>Start Date :</label>
+      <div class="input-container">
+        
+         <input type="date" placeholder="Start date">
+      </div>
+     <label>End Date :</label>
+     <div class="input-container">
+        
+         <input type="date" placeholder="End date">
+      </div>
+      <label>Approval Manager :</label>
+      <div class="input-container">
+        
+         <input type="Text" placeholder="">
+      </div>
+      <label>Reason :</label>
+      <div class="input-container">
+        
+         <input type="text" placeholder="">
+      </div>
+        <button type="submit" class="submit">
+          Request
+     </button>
+
+     
+  </form>
+
+      </div>
+    </div>
+</div>
       
     

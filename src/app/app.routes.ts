@@ -13,6 +13,7 @@ import { EmpProfileNavbarComponent } from './emp-profile-navbar/emp-profile-navb
 import { EmpProfileSidebarComponent } from './emp-profile-sidebar/emp-profile-sidebar.component';
 import { EmpFileUploadComponent } from './emp-file-upload/emp-file-upload.component';
 import { EmpLeaveReqComponent } from './emp-leave-req/emp-leave-req.component';
+import { EmpLeaveReqSidebarComponent } from './emp-leave-req-sidebar/emp-leave-req-sidebar.component';
 export const routes: Routes = [
     {
         path:'login/:data',
@@ -73,6 +74,10 @@ export const routes: Routes = [
     {
         path:'file_upload',
         component:EmpFileUploadComponent
+    },
+    {
+        path:'leave_req_sidebar',
+        component:EmpLeaveReqSidebarComponent
     }
 
 ];
