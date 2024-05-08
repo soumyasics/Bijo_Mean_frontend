@@ -15,21 +15,27 @@ export class EmpLeaveReqComponent {
 
   constructor(private emp_leaveService:EmpLeaveServiceService){}
 
+   
+
   leave_req(leave_req_form:any){
     const formdata=new FormData()
       formdata.append('leave_start_Date',leave_req_form.start_date)
       formdata.append('leave_end_Date',leave_req_form.end_date)
-      formdata.append('leave_no_of_leave',leave_req_form.no_of_days)
+      formdata.append('leave_no_of_days',leave_req_form.no_of_days)
       formdata.append('leave_approval_manager',leave_req_form.approval_manager)
       formdata.append('leave_type',leave_req_form.leave_type)
       formdata.append('leave_reason',leave_req_form.reason)
 
-    this.emp_leaveService.leave_reqService(leave_req_form).subscribe((data:any)=>{
+
+    this.emp_leaveService.leave_reqService(formdata).subscribe((data:any)=>{
       console.log(data);
       alert('Leave Request Submitted Successfully')
       
     })
+    
   }
+
+  
 
 
 }

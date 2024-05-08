@@ -65,18 +65,28 @@
        </div>
       <label>Approval Manager :</label>
       <div class="input-container">
-        
-         <input type="Text" placeholder="" name="approval_manager" ngModel>
+        <select id="leave_type" class="create-user-select-half form-select form-select-lg mb-3" aria-label="Default select example" name="approval_manager" ngModel>
+          <option selected>Select</option>
+          <option value="PL" >Bherenger</option>
+          <option value="CL">Don Bibi</option>
+          <option value="SL">Stanzer</option>
+          <option value="ML">Cliew Mahan</option>
+        </select>
       </div>
       <label>Leave Type :</label>
       <div class="input-container">
-        
-         <input type="Text" placeholder="" name="leave_type" ngModel>
+        <select id="leave_type" class="create-user-select-half form-select form-select-lg mb-3" aria-label="Default select example" name="leave_type" ngModel>
+          <option selected>Select</option>
+          <option value="PL" >Privilege Leave (PL)</option>
+          <option value="CL">Casual Leave (CL)</option>
+          <option value="SL">Sick Leave (SL)</option>
+          <option value="ML">Maternity Leave (ML)</option>
+        </select>
       </div>
       <label>Reason :</label>
-      <div class="input-container">
+      <div data-mdb-input-init class="form-outline mb-4">
+        <textarea class="form-control" id="textAreaExample5" rows="3" name="reason" ngModel></textarea>
         
-         <input type="text" placeholder="" name="reason" ngModel>
       </div>
         <button type="submit" class="submit" (click)="leave_req(leave_req_form.value)">
           Request
