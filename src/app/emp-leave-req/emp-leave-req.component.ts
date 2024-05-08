@@ -24,7 +24,11 @@ export class EmpLeaveReqComponent {
       formdata.append('leave_type',leave_req_form.leave_type)
       formdata.append('leave_reason',leave_req_form.reason)
 
-    
+    this.emp_leaveService.leave_reqService(leave_req_form).subscribe((data:any)=>{
+      console.log(data);
+      alert('Leave Request Submitted Successfully')
+      
+    })
   }
 
 
