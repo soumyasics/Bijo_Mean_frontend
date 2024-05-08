@@ -36,6 +36,7 @@ constructor(private empservice:EmpServiceService, private router:Router){}
     this.empservice.signupService(formdata).subscribe((data:any)=>{
       console.log(data);
       if(data.status==200){
+        alert('Your Request Submitted Successfully ****')
         this.router.navigate(['/login']);
       }
       else 

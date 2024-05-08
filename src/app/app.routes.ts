@@ -6,7 +6,6 @@ import { EmpNewpasswordComponent } from './emp-newpassword/emp-newpassword.compo
 import { EmpProfileComponent } from './emp-profile/emp-profile.component';
 import { EmpNavbarComponent } from './emp-navbar/emp-navbar.component';
 import { EmpHomeComponent } from './emp-home/emp-home.component';
-import { EmpRegComponent } from './emp-reg/emp-reg.component';
 import { EmpLandingPageComponent } from './emp-landing-page/emp-landing-page.component';
 import { EmpDasboardComponent } from './emp-dasboard/emp-dasboard.component';
 import { EmpProfileNavbarComponent } from './emp-profile-navbar/emp-profile-navbar.component';
@@ -46,10 +45,6 @@ export const routes: Routes = [
     {
         path:'home',
         component:EmpHomeComponent
-    },
-    {
-        path:'reg',
-        component:EmpRegComponent
     },
     {
         path:'landing_page',
