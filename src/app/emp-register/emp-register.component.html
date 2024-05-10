@@ -103,9 +103,9 @@
       <div class="gender_input">
         <div class="col g-5">
           <label class="gender">Gender</label>
-          <div class="radio-buttons-container">
+          <!-- <div class="radio-buttons-container">
             <div class="radio-button">
-              <input name="radio-group" id="radio2" class="radio-button__input" type="radio" checked>
+              <input name="radio-group gender" id="radio2" class="radio-button__input" type="radio" value="male" ngModel checked>
               <label for="radio2" class="radio-button__label">
                 <span class="radio-button__custom"></span>
                     
@@ -113,7 +113,7 @@
               </label>
             </div>
             <div class="radio-button">
-              <input name="radio-group" id="radio1" class="radio-button__input" type="radio">
+              <input name="radio-group gender" id="radio1" class="radio-button__input" value="female" type="radio" ngModel>
               <label for="radio1" class="radio-button__label">
                 <span class="radio-button__custom"></span>
                 
@@ -121,15 +121,23 @@
               </label>
             </div>
             <div class="radio-button">
-              <input name="radio-group" id="radio3" class="radio-button__input" type="radio">
+              <input name="radio-group gender" id="radio3" class="radio-button__input" value="other" type="radio" ngModel>
               <label for="radio3" class="radio-button__label">
                 <span class="radio-button__custom"></span>
                     
                   Other
               </label>
+            </div> -->
+            <div class="input-container">
+            <select id="gender" class="create-user-select-half form-select form-select-lg mb-3" aria-label="Default select example" name="gender" ngModel>
+              <option selected>Select</option>
+              <option value="male" >Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
             </div>
-            </div>
-        </div>
+          </div>
+      
       </div>
       
         

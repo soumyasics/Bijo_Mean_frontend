@@ -10,9 +10,13 @@ import { EmpLandingPageComponent } from './emp-landing-page/emp-landing-page.com
 import { EmpDasboardComponent } from './emp-dasboard/emp-dasboard.component';
 import { EmpProfileNavbarComponent } from './emp-profile-navbar/emp-profile-navbar.component';
 import { EmpProfileSidebarComponent } from './emp-profile-sidebar/emp-profile-sidebar.component';
-import { EmpFileUploadComponent } from './emp-file-upload/emp-file-upload.component';
 import { EmpLeaveReqComponent } from './emp-leave-req/emp-leave-req.component';
 import { EmpLeaveReqSidebarComponent } from './emp-leave-req-sidebar/emp-leave-req-sidebar.component';
+
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { AdminProfileComponent } from './admin-profile/admin-profile.component';
+import { AdminProfileNavbarComponent } from './admin-profile-navbar/admin-profile-navbar.component';
+import { AdminProfileSidebarComponent } from './admin-profile-sidebar/admin-profile-sidebar.component';
 export const routes: Routes = [
     {
         path:'login/:data',
@@ -67,12 +71,26 @@ export const routes: Routes = [
         component:EmpLeaveReqComponent
     },
     {
-        path:'file_upload',
-        component:EmpFileUploadComponent
-    },
-    {
         path:'leave_req_sidebar',
         component:EmpLeaveReqSidebarComponent
+    },
+    {
+        path:'admin_login',
+        component:AdminLoginComponent
+        
+    },
+    {
+        path:'admin_profile',
+        component:AdminProfileComponent
+        
+    },
+    {
+        path:'admin_profile_navbar',
+        component:AdminProfileNavbarComponent
+    },
+    {
+        path:'admin_profile_sidebar',
+        component:AdminProfileSidebarComponent
     }
 
 ];

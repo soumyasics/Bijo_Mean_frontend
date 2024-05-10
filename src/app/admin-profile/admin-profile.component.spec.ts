@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { EmpFileUploadComponent } from './emp-file-upload.component';
+import { AdminProfileComponent } from './admin-profile.component';
 
-describe('EmpFileUploadComponent', () => {
-  let component: EmpFileUploadComponent;
-  let fixture: ComponentFixture<EmpFileUploadComponent>;
+describe('AdminProfileComponent', () => {
+  let component: AdminProfileComponent;
+  let fixture: ComponentFixture<AdminProfileComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [EmpFileUploadComponent]
+      imports: [AdminProfileComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(EmpFileUploadComponent);
+    fixture = TestBed.createComponent(AdminProfileComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

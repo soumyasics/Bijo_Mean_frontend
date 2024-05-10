@@ -17,6 +17,8 @@ export class EmpRegisterComponent {
 constructor(private empservice:EmpServiceService, private router:Router){}
 
   file:any
+  gender:any
+
 
   emp_reg_form(rgform:any){
       const formdata=new FormData()
@@ -31,6 +33,7 @@ constructor(private empservice:EmpServiceService, private router:Router){}
         formdata.append('emp_postal',rgform.postal)
         formdata.append('emp_password',rgform.password)
         formdata.append('emp_profile',this.file)
+        formdata.append('emp_gender',rgform.gender)
     
       console.log("reg form ",formdata);
     this.empservice.signupService(formdata).subscribe((data:any)=>{

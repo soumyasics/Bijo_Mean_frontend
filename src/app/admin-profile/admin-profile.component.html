@@ -1,0 +1,17 @@
+<app-admin-profile-navbar></app-admin-profile-navbar>
+<app-admin-profile-sidebar></app-admin-profile-sidebar>
+
+<table>
+    <tr *NgFor="let emp_data1 of emp_data">
+        <div class="card">
+            <div class="img">                
+                <img class="dp" src="http://localhost:3000/{{emp_profile.filename}}" />
+            </div>
+            <span><h3>{{emp_data.Emp_Fname}}</h3></span>
+            <p class="info">{{emp_data.Emp_Email}}</p>
+            <div class="share">
+            </div>
+            <button>Resume</button>
+        </div>
+    </tr>
+</table>

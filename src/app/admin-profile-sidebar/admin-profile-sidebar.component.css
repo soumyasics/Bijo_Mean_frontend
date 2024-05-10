@@ -1,0 +1,55 @@
+.sidebar {
+    position: fixed;
+    
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 235px;
+    
+    z-index: 600;
+  }
+  
+  @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  }
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  .dp{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    
+}
+
+.profile_sidebar{
+    /* border: 1px solid; */
+    color: black;
+
+}
+
+.personal_info{
+    position: absolute;
+    margin-top: 30px;
+    color: #000;
+}
+
+.sidemenu_detail{
+    position: absolute;
+    margin-top: 150px;
+}

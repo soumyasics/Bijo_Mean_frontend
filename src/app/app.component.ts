@@ -12,8 +12,9 @@ import { EmpDasboardComponent } from './emp-dasboard/emp-dasboard.component';
 import { EmpProfileNavbarComponent } from './emp-profile-navbar/emp-profile-navbar.component';
 import { EmpProfileSidebarComponent } from './emp-profile-sidebar/emp-profile-sidebar.component';
 import { EmpLeaveReqComponent } from './emp-leave-req/emp-leave-req.component';
-import { EmpFileUploadComponent } from './emp-file-upload/emp-file-upload.component';
 import { EmpLeaveReqSidebarComponent } from './emp-leave-req-sidebar/emp-leave-req-sidebar.component';
+
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -21,8 +22,8 @@ import { EmpLeaveReqSidebarComponent } from './emp-leave-req-sidebar/emp-leave-r
     EmpDasboardComponent,EmpLoginComponent,
     EmpRegisterComponent,EmpForgotpasswordComponent,EmpNewpasswordComponent,
     EmpProfileComponent,EmpNavbarComponent,EmpHomeComponent,EmpProfileNavbarComponent,
-    EmpProfileSidebarComponent,EmpLeaveReqComponent,EmpFileUploadComponent,EmpLeaveReqSidebarComponent,
-    RouterLink],
+    EmpProfileSidebarComponent,EmpLeaveReqComponent,EmpLeaveReqSidebarComponent,
+    RouterLink,AdminLoginComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
